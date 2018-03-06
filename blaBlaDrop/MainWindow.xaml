@@ -1,0 +1,18 @@
+﻿<Window x:Class="blaBlaDrop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:blaBlaDrop"
+        mc:Ignorable="d"
+        Title="BlaBlaDrop  - бла-бла и списанно!" Height="235" Width="530">
+    <Grid>
+        <Button x:Name="bGenerateDocs" Content="Создать технические заключения" HorizontalAlignment="Left" Margin="297,169,0,0" VerticalAlignment="Top" Width="210" Click="bGenerateDocs_Click"/>
+        <TextBox x:Name="tbPathToDeviceList" HorizontalAlignment="Left" Height="47" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282"/>
+        <Button x:Name="bLoadDeviceList" Content="Открыть список техики для списания"  HorizontalAlignment="Left" Margin="297,10,0,0" VerticalAlignment="Top" Width="210" Click="bLoadDeviceList_Click" Height="47"/>
+        <CheckBox x:Name="cbIsPDF" Content="Сохранить в версию, сразу готовую к распечатке (PDF)" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbConstantSnoring" Content="Дописывать эту фразу в конец каждого  заключения:" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Checked="cbConstantSnoring_Checked" Unchecked="cbConstantSnoring_Unchecked"/>
+        <TextBox x:Name="tbConstantSnoring" HorizontalAlignment="Left" Height="23" Margin="36,95,0,0" TextWrapping="Wrap" Text="Сведения о драгоценных металлах отсутствуют." VerticalAlignment="Top" Width="471" IsEnabled="False"/>
+
+    </Grid>
+</Window>
